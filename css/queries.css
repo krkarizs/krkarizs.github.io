@@ -1,0 +1,190 @@
+@media only screen and (max-width: 1023px) {
+  body { padding: 1rem; }
+
+  .heading-primary--main {
+    font-size: 5rem;
+    letter-spacing: .1rem;
+  }
+  
+  .heading-primary--sub {
+    font-size: 2.5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+    letter-spacing: .1rem;
+    margin: 1rem 0 6rem 0;
+  }
+  
+  .heading-secondary--sub { font-size: 2rem; }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+    margin-bottom: 1.3rem;
+  }
+
+  .paragraph-text {
+    font-size: 1.6rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .navigation__item { margin-right: 1.7rem; }
+  
+  .navigation__link:visited,
+  .navigation__link:link {
+    font-size: 1.7rem;
+    padding-bottom: .3rem;
+  }
+
+  .btn--big {
+    font-size: 1.7rem;
+    padding: 1rem 2.5rem;
+  }
+
+  .btn--small {
+    font-size: 1.2rem;
+    padding: .8rem 1.5rem;
+  }
+
+  .section-about { padding: 25rem 4rem 8rem 4rem; }
+
+  .section-skills, .section-experience { padding: 8rem 0; }
+
+  .section-portfolio, .section-hobby { padding: 8rem 4rem; }
+
+  .section-skills .row, .section-experience .row { max-width: 40%; }
+
+  .section-skills .row .col-1-of-4 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .card__icon { font-size: 4rem; }
+
+  .row .col-1-of-3 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .text-box { width: 85%; }
+
+  .text-box__picture { 
+    width: 100%;
+    margin-top: 5%;
+  }
+
+  footer { padding: 5rem 4rem; }
+
+  .footer__item { margin-right: 2rem; }
+  
+  .footer__link { font-size: 4rem; }
+
+  .popup__left { display: table-row; }
+  
+  .popup__right { width: 100%; }
+
+  .popup__img {
+    display: inline-block;
+    width: 50%;
+  }
+}
+
+/*TABLET VIEW*/
+@media only screen and (max-width: 767px) {
+  .heading-secondary {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+
+  .section-about .row .col-1-of-2, .section-portfolio .row .col-1-of-2 {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .avatar__photo { width: 70%; }
+
+  .section-skills .row, .section-experience .row { max-width: 70%; }
+
+  .section-skills, .section-experience, .section-portfolio, .section-hobby { padding: 5rem 3rem}
+
+  .section-hobby .row .col-1-of-4 {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+
+  .row .col-3-of-4 { width: 100%; }
+
+  .text-box__picture {
+    width: 50%;
+    margin: 0 auto;
+  }
+ 
+  .popup__text {
+    font-size: 1.4rem;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
+}
+
+/*MOBILE VIEW*/
+@media only screen and (max-width: 480px) {
+  .navigation__item { margin-right: 1.4rem; }
+  
+  .navigation__link:visited,
+  .navigation__link:link {
+    font-size: 1.4rem;
+    padding-bottom: .1rem;
+  }
+
+  .heading-primary--main {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    line-height: 5rem;
+  }
+  
+  .heading-primary--sub {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: .5rem;
+  }
+
+  .heading-secondary {
+    font-size: 2rem;
+    letter-spacing: 0;
+    margin: 1rem 0 4rem 0;
+  }
+  
+  .heading-secondary--sub { font-size: 1.6rem; }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .paragraph-text { font-size: 1.4rem; }
+
+  .avatar__photo { width: 80%; }
+
+  .section-skills .row, .section-experience .row { max-width: 90%; }
+
+  .section-skills, .section-experience, .section-portfolio, .section-hobby { padding: 3.5rem 2.5rem}
+
+  footer .row .col-1-of-2 { width: 100%; }
+  footer p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer__list { text-align: center; }
+
+  .footer__link { font-size: 2.5rem; }
+
+  .popup__content { width: 90%; }
+
+  .popup__text { font-size: 1.2rem; }
+}

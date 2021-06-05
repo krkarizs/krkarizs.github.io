@@ -1,43 +1,323 @@
 <!DOCTYPE html>
-<html lang="fi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krisztina Karizs - Etusivu</title>
+    <meta name="description" content="A brief professional introduction including former work experience, important skills and a short a portfolio.">
+    <meta name="keywords" content="resume, work esperience, skills, portfolio">
+    <meta name="author" content="Krisztina Karizs">
+
+    <title>Krisztina Karizs - Portfolio Page</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="css/styles.css">
-
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/queries.css">
 </head>
 <body>
+    <!--Header Section-->
     <header>
-        <h1>Krisztina Karizs</h1>
         <nav>
-            <ul class="nav">
-                <li><a href="index.html">Etusivu</a></li>
-                <li><a href="harrastukset.html">Harrastukset</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#section-about" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#section-experience" class="navigation__link">Experience</a></li>
+                <li class="navigation__item"><a href="#section-portfolio" class="navigation__link">Portfolio</a></li>
+                <li class="navigation__item"><a href="#section-hobby" class="navigation__link">Hobby</a></li>
             </ul>
         </nav>
+        <div class="header__text-box">
+            <h1 class="heading-primary">
+                <span class="heading-primary--main">Krisztina Karizs</span>
+                <span class="heading-primary--sub">Account Specialist</span>
+            </h1>
+            <a href="#section-about" class="btn btn--white btn--big">Learn more</a>
+        </div>
     </header>
-    <main>
-        <img src="images/20201103_130801-min.jpg" alt="Portfolio picture" class="portfolio-img">
-        <p>Olen liiketoiminta-alan osaaja. Olen töissä <a href="https://www.ibm.com/financing" target="_blank">IBM</a>:n myyntireskontra tiimissä. Vaikka äidinkieleni on unkari, puhun sujuvaa suomea ja englantia. Olen asunut Jyväskylässä yli vuoden. Viime vuonna muutin väliaikaisesti takaisin Unkariin, mutta suunnittelen paluuta Suomeen. Osallistun tähän verkkokurssiin, koska haluaisin opiskella <a href="https://www.jamk.fi/fi/Etusivu/" target="_blank">Jyväskylyän Ammattikorkeakoulussa</a>.</p>
-        <h2>Harrastukset</h2>
-        <p>Harrastuksilla on elämässäni valtava merkitys. Vapaa-ajalla harrastan muun muassa seuraavia:</p>
-        <ul class="my-list">
-            <li>Luen runsaasti kirjoja. Tykkään nykykirjallisuudesta erittäin pajon</li>
-            <li>Pelaan tietokonepelejä Switchillä tai PC:llä</li>
-            <li>Ulkoilen päivittäin koirien kanssa</li>
-            <li>Minulla on laaja kaveriporukka ja viihdyn ystävien seurassa</li>
+    <!--Introduction section-->
+    <section class="section-about" id="section-about">
+        <h2 class="heading-secondary"><q>The best way to predict the future is to create it</q><span class="heading-secondary--sub">&mdash;Abraham Lincoln</span> </h2>
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary">Career goals and motivation</h3>
+                <p class="paragraph-text">I have been building my career for about 10 years and my motivation has not changed: I am working to be part of the future. To reach this goal, I was teaching young adults to help them pursuing their dreams then I became a business operations specialist to promote success and financial growth. However, I have realised that my key to the future is technology.</p>
+                <h3 class="heading-tertiary">What I have done so far</h3>
+                <p class="paragraph-text">At the beginning of my career, I spent four years in South Korea where I was teaching Hungarian at a university. After I returned to my home country, I became part of a business operations team where I gained experience on accounts receivable processes and supported customers from different parts of Europe.  Nowadays, I am heading towards something brand new as I started to advance my knowledge on technology, and I will be an IT consultant in an outstanding Nordic company from September 2021.</p>
+            </div>
+            <div class="col-1-of-2">
+                <div class="avatar">
+                    <img src="img/avatar.jpg" alt="Photo of the author" class="avatar__photo">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Skills section / Listing some important soft skills-->
+    <section class="section-skills">
+        <h2 class="heading-secondary">Things that I am good at...</h2>
+        <div class="row">
+            <div class="col-1-of-4">
+                <div class="card--small">
+                    <i class="fas fa-comments card__icon"></i>
+                    <h3 class="heading-tertiary">Communication</h3>
+                    <p class="card__text">Good communication skills are crucial for success. Therefore I always talk to people assertively and with a friendly manner.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="card--small">
+                    <i class="fas fa-users card__icon"></i>
+                    <h3 class="heading-tertiary">Teamwork</h3>
+                    <p class="card__text">I love  being part of a team. If anyone needs a good listener, a diplomat or a helping hand, I am always around.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="card--small">
+                    <i class="fas fa-lightbulb card__icon"></i>
+                    <h3 class="heading-tertiary">Problem solving</h3>
+                    <p class="card__text">There are no problems, only challenges that I try to solve creatively and I try to learn from them as much as I can.</p>
+                </div>
+            </div>
+            <div class="col-1-of-4">
+                <div class="card--small">
+                    <i class="fas fa-headset card__icon"></i>
+                    <h3 class="heading-tertiary">Customer care</h3>
+                    <p class="card__text">I have worked together with customers from diffirect parts of the world and I always strive for their satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Experience section / Listing the most important work experience-->
+    <section class="section-experience" id="section-experience">
+        <h2 class="heading-secondary">My most impressive employers</h2>
+        <div class="row">
+            <div class="col-1-of-3">
+                <div class="card--big">
+                    <div class="card__picture card__picture--1">&nbsp;</div>
+                    <h4 class="card__heading">Financial services</h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>IBM Global Financing</li>
+                            <li>Budapest | Hungary</li>
+                            <li>Accounts Specialist</li>
+                            <li>20.07.2020 - </li>
+                        </ul>
+                    </div>
+                    <a href="#popup--1" class="btn btn--yellow btn--small">Read more</a>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card--big">
+                    <div class="card__picture card__picture--2">&nbsp;</div>
+                    <h4 class="card__heading">Academic research</h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>University of Jyväskylä</li>
+                            <li>Jyväskylä | Finland</li>
+                            <li>Grant researcher</li>
+                            <li>01.04.2019 - 31.05.2020</li>
+                        </ul>
+                    </div>
+                    <a href="#popup--2" class="btn btn--yellow btn--small">Read more</a>
+                </div>
+            </div>
+            <div class="col-1-of-3">
+                <div class="card--big">
+                    <div class="card__picture card__picture--3">&nbsp;</div>
+                    <h4 class="card__heading">Teaching</h4>
+                    <div class="card__details">
+                        <ul>
+                            <li>Hankuk University</li>
+                            <li>Seoul | Korea</li>
+                            <li>Assistant professor</li>
+                            <li>01.03.2014 - 31.08.2017</li>
+                        </ul>
+                    </div>
+                    <a href="#popup--3" class="btn btn--yellow btn--small">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Portfolio section-->
+    <section class="section-portfolio" id="section-portfolio">
+        <h2 class="heading-secondary">Portfolio</h2>
+        <div class="row">
+            <p class="paragraph-text">I had some achievements in my career and through my hobbies that I would like to include in my portfolio. I am an amateur photographer and documented several events, all my trips and our everyday family life with our dogs. I love to take shots of landscapes and special places and moments. I am really interested in front end development and work on a few small projects to gain some new skills. It also makes me proud that I could publish several articles as a researcher and worked as an editor of books and journals.</p>
+        </div>
+        <div class="row">
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary">Academic research</h3>
+                <p class="paragraph-text">I have worked as a researcher for about four years and published several articles. My field is literary trauma studies and I have written about contemporary Hungarian and Finnish novels. I analyse narrative techniques that represent personal and collective traumatization. Below is a link to one of my articles on the difficulties of remembering traumatic events.</p>
+                <a href="https://www.theartsjournal.org/index.php/site/article/view/1068/524" target="_blank" class="btn btn--yellow btn--small">Read my article</a>
+            </div>
+            <div class="col-1-of-2">
+                <h3 class="heading-tertiary">Technology</h3>
+                <p class="paragraph-text">I have always been interested in technology and started to study web development and design about a year ago. I have participated in a short course on the topic in Hungary and done several classes on Udemy. Thanks to this, I gained valuable HTML, CSS, Sass and Bootstrap skills, and a very basic knowledge on JavaScript. I store some nice projects on my GitHub.</p>
+                <a href="https://github.com/krkarizs" target="_blank" class="btn btn--yellow btn--small">Visit my GitHub</a>
+            </div>
+        </div>
+    </section>
+    <!--Galery / part of the portfolio section, displays some of my own photos-->
+    <section class="section-galery">
+        <ul class="galery__list clearfix">
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_1.jpg" alt="Laajavuoren sauna">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_2.JPG" alt="Ocean view in Jeju Island">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_3.jpg" alt="Kotalampi in Jyväskylä">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_4.JPG" alt="Seoul secret garden">
+                </figure>
+            </li>
         </ul>
-    </main>
+        <ul class="galery__list clearfix">
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_5.jpg" alt="Köhniöjärvi in winter">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_6.jpg" alt="Southern island in South Korea">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_7.JPG" alt="Lotus lantern festival in Seoul">
+                </figure>
+            </li>
+            <li>
+                <figure class="galery__photo">
+                    <img src="img/galery_8.JPG" alt="Sitting Buddha">
+                </figure>
+            </li>
+        </ul>
+    </section>
+    <!--Hobby section-->
+    <section class="section-hobby" id="section-hobby">
+        <div class="bg-video">
+            <video class="bg-video__content" autoplay muted loop>
+                <source src="img/background_video_2.mp4" type="video/mp4">
+                Your browser is not supported!
+            </video>
+        </div>
+        <h2 class="heading-secondary">My favourite hobbies</h2>
+        <div class="row">
+            <div class="text-box clearfix">
+                <div class="col-1-of-4"> 
+                    <img src="img/hobbi_3.jpg" alt="Nintendo Switch controller" class="text-box__picture">
+                </div>
+                <div class="col-3-of-4">
+                    <p class="paragraph-text">I have always loved computer games. I have played almost everything from FPS to adventure games and RPG. My favourites are such titles as Life is Strange, The Walking Dead or Neverwinter Nights. Since I got my new Nintendo Switch, I became a big fan of anime games such as the Astral Chain. I love Nintendo’s workout games as well and obsessed with VR.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-box clearfix">
+                <div class="col-1-of-4">
+                    <img src="img/hobbi_2.jpg" alt="Landscape" class="text-box__picture">
+                </div>
+                <div class="col-3-of-4">
+                    <p class="paragraph-text">I enjoy being in nature. I have tried the most interesting hiking trails in South Korea and completed some hiking competitions with my friends in Hungary. I love to go to adventures with my dogs and enjoy the sunshine and fresh air. I spent a lot of time in the forests in Finland where nature could be the part of my everyday life. The only thing that can stop me, is my fear of high places.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="text-box clearfix">
+                <div class="col-1-of-4">
+                    <img src="img/hobbi_1.jpg" alt="Sony Alpha camera" class="text-box__picture">
+                </div>
+                <div class="col-3-of-4">
+                    <p class="paragraph-text">I am an enthusiastic amateur photographer. I love documenting my adventures and memorable moments. I often take pictures of landscapes; I am also interested in macro photography that helps me show the hidden beauty of nature. But most of all, I love taking concert photos. I share this great interest with my wife who is a professional. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Footer / Copyright info and social media links-->
     <footer>
-        <h2>Yhteystiedot</h2>
-        <address>Laittaa sähköpostin osoitteeseen: <a href="mailto:krista@gmail.com">krista@gmail.com</a> tai soita numeroon <a href="tel:000000000">033-3333-333</a>. </address>
-        <a href="asiakkaat_taulukko.html" class="btn-full">Linkki Asiakkaat-taulukkoon</a>
-    </footer>    
+        <div class="row">
+            <div class="col-1-of-2">
+                <p>Built by Krisztina Karizs for the online corse Web tekniikat organised by JAMK. Copyright &copy; Kisztina Karizs. The avatar photo is taken by Ajándék Muzsalyi, &copy; <a href="https://instagram.com/muzsalyi_photography?utm_medium=copy_link" target="_blank" class="footer__link--text">Muzsalyi Photography</a>. The stock photos are from <a href="https://unsplash.com/" target="_blank" class="footer__link--text">Unsplash</a>.</p>
+            </div>
+            <div class="class-col-1-of-2">
+                <ul class="footer__list">
+                    <li class="footer__item"><a href="callto:06706331571" class="footer__link footer__link--1"><i class="fas fa-phone-square footer__icon"></i></a></li>
+                    <li class="footer__item"><a href="mailto:sevenke@gmail.com" class="footer__link footer__link--2"><i class="fas fa-at footer__icon"></i></a></li>
+                    <li class="footer__item"><a href="https://www.facebook.com/krisztina.karizs" target="_blank" class="footer__link footer__link--3"><i class="fab fa-facebook-square footer__icon"></i></a></li>
+                    <li class="footer__item"><a href="https://www.linkedin.com/in/krisztina-karizs-5601a8148/" target="_blank" class="footer__link footer__link--4"><i class="fab fa-linkedin footer__icon"></i></a></li>
+                    <li class="footer__item"><a href="https://instagram.com/krisztinakarizs?utm_medium=copy_link" target="_blank" class="footer__link footer__link--5"><i class="fab fa-instagram-square footer__icon"></i></a></li>
+                    <li class="footer__item"><a href="https://api.whatsapp.com/send?phone=06706331571" target="_blank" class="footer__link footer__link--6"><i class="fab fa-whatsapp-square footer__icon"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!--Pop up windows for the experience section / Additional information about the roles and achievements-->
+    <div class="popup" id="popup--1">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/card_1.jpg" alt="Office building" class="popup__img">
+                <img src="img/popup_1.jpg" alt="Office space" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-experience" class="popup__close">&times;</a>
+                <h3 class="heading-tertiary heading-tertiary--yellow">Responsibilities and achievements</h3>
+                <p class="popup__text">I was working in IBM Global Financing as an AR Collector then later changed my position and became an Account Specialist. In both roles, I was managing our business partners’ financial portfolios. My tasks included handling customer receivable issues, disputes, and claims. Additionally, I took part in cash application as well. As a collector I was supporting customers from Ireland, the United Kingdom and Finland. Later, I took over the Benelux market and worked together with customers from the Netherlands and Belgium. I became part of the business operations team when our processes were transferred to the Hungarian COE thus I could actively form our processes.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup--2">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/card_2.jpg" alt="Office building" class="popup__img">
+                <img src="img/popup_2.jpg" alt="Office space" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-experience" class="popup__close">&times;</a>
+                <h3 class="heading-tertiary heading-tertiary--yellow">Responsibilities and achievements</h3>
+                <p class="popup__text">I have been doing research since 2014. In 2019, I got the chance to spend almost two years at the University of Jyväskylä as a grant researcher. I have been in contact with the university since 2012, when I had the opportunity to work at the former TAIKU for a semester as a teacher trainee. Since then, I have been also taking part in editing a periodics, Spectrum Hungarologicum, which is published by the University of Jyväskylä and the University of Pécs. As a researcher, I focus on literary trauma studies in the context of contemporary Hungarian literature. I analyse narratives that deal with individual and collective memory of the Communist era and tackle mental trauma caused by political oppression and systematic victimization. Among other fields, my topic is in close connection with creative writing as well due to the potential therapeutic use of trauma narratives. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup--3">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/card_3.jpg" alt="Office building" class="popup__img">
+                <img src="img/popup_3.jpg" alt="Office space" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-experience" class="popup__close">&times;</a>
+                <h3 class="heading-tertiary heading-tertiary--yellow">Responsibilities and achievements</h3>
+                <p class="popup__text">I worked as an Assistant Professor between 2014 and 2017 at Hankuk University of Foreign Studies in South Korea. I was a member of the Department of Hungarian Studies and my main duty was teaching Hungarian as a second language. In our Bachelor program, our students had the chance to gain advance knowledge on the language and the culture as well. I addition to that, I was hired to initiate a Finnish language and culture program within our department. I was teaching the basics of Finnish language, and I am very proud of the fact that some of my students have been chosen to participate in Summer courses in Finland. I also built valuable ties between the department and the Finnish Embassy in Seoul and we also had the opportunity to have a visiting professor from Turku for a short term.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Script for icons - Icons taken from Front Awesome-->
+    <script src="https://kit.fontawesome.com/af2e67f1fc.js" crossorigin="anonymous"></script>
 </body>
 </html>
